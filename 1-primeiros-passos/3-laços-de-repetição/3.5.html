@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let alunos = 0;
+        let continuar = "S";
+
+        while (continuar == "S") {
+
+        let nota1 = Number(prompt("Coloque a primeira nota"));
+        let nota2 = Number(prompt("Coloque a segunda nota"));
+
+        let media = (nota1 + nota2) / 2;
+
+        if (media >= 9.5) {
+            console.log("Aluno aprovado");
+            alunos++;
+        }
+
+        continuar = prompt("Calcular a média de outro aluno? (S/N)");
+        console.log("alunos aprovados:"+ alunos);
+        }
+
+
+    </script>
+</body>
+</html>

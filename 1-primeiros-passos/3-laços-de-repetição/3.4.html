@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero1 = Number(prompt("Digite o primeiro numero "))
+        let numero2 = Number(prompt("Digite o segundo numero "))
+        let soma = 0;
+        let contagem = 0;
+
+        while (numero1 >= numero2){
+        numero1 = Number(prompt("O primeiro numero precisa ser menor que o segundo")) 
+        }
+
+        for (let numero = numero1; numero <= numero2; numero++) {
+            soma += numero;
+            contagem++;
+        }
+
+        let media = (soma/contagem)
+        console.log("A média é:" + media)
+
+    </script>
+</body>
+</html>

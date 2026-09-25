@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1 = Number(prompt("Adicione a primeira nota"));
+
+        while (nota1 < 0 || nota1 > 10) {
+            nota1 = Number(prompt("Nota inválida. Digite novamente"));
+        }
+
+        let nota2 = Number(prompt("Adicione a segunda nota"));
+
+        while (nota2 < 0 || nota2 > 10) {
+            nota2 = Number(prompt("Nota inválida. Digite novamente"));
+        }
+
+        let nota3 = Number(prompt("Adicione a terceira nota"));
+
+        while (nota3 < 0 || nota3 > 10) {
+            nota3 = Number(prompt("Nota inválida. Digite novamente"));
+        }
+
+        let nota4 = Number(prompt("Adicione a quarta nota"));
+
+        while (nota4 < 0 || nota4 > 10) {
+            nota4 = Number(prompt("Nota inválida. Digite novamente"));
+        }
+
+        let nota5 = Number(prompt("Adicione a quinta nota"));
+
+        while (nota5 < 0 || nota5 > 10) {
+            nota5 = Number(prompt("Nota inválida. Digite novamente"));
+        }
+
+        let nota6 = Number(prompt("Adicione a sexta nota"));
+
+        while (nota6 < 0 || nota6 > 10) {
+            nota6 = Number(prompt("Nota inválida. Digite novamente"));
+        }
+
+        let media = (nota1+nota2+nota3+nota4+nota5+nota6) / 6
+        console.log("a média é:" + media)
+    </script>
+</body>
+</html>
