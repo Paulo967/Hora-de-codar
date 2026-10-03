@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frutas = ["caju", "Pera", "Melancia", "kiwi"]
+        alert(frutas)
+
+        let frutaEscolhida = prompt("digite uma fruta")
+
+        while (frutaEscolhida != "PARE") {
+             if (frutas.includes(frutaEscolhida)) {
+          let posição = frutas.indexOf (frutaEscolhida)
+          frutas.splice (posição,1) 
+          alert(frutas)
+        }else {
+            alert("fruta indisponivel")
+        }
+        frutaEscolhida = prompt("digite uma fruta")
+        }
+        
+        if (frutas.length===0) {
+            alert("Lista de compras finalizada")
+        }else {
+            alert(frutas)
+        }
+    </script>
+</body>
+</html>

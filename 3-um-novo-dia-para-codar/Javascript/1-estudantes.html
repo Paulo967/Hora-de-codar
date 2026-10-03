@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let estudantes = [];
+        let nomes = prompt("Digite o nome dos estudantes")
+
+        while (nomes!= "pare") {
+           estudantes.push (nomes);
+           nomes = prompt("Digite outro nome ou 'PARE' para encerrar")
+        }
+
+        alert("QUANTIDADE: " + estudantes.length);
+
+        for (let i=0; i <estudantes.length; i++ ) {
+            alert (estudantes[i])
+        }
+
+    </script>
+</body>
+</html>
